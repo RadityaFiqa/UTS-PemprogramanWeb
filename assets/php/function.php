@@ -64,9 +64,9 @@ class AngsuranFlat
         $angsuran = $this->angsuranPerbulan();
         $sisaPinjaman = $this->totalPinjaman;
 
-        for ($i = 1; $i <= $this->jangkaWaktu; $i++) {
+        for ($i = 0; $i <= $this->jangkaWaktu; $i++) {
             if ($i === 0) {
-                $data[] = [
+                $data[$i] = [
                     'bulan' => $i,
                     'pokok' => 0,
                     'bunga' => 0,
@@ -76,7 +76,7 @@ class AngsuranFlat
             } else {
                 $sisaPinjaman -= $angsuran['pokok'];
 
-                $data[] = [
+                $data[$i] = [
                     'bulan' => $i,
                     'pokok' => $angsuran['pokok'],
                     'bunga' => $angsuran['bunga'],

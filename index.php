@@ -105,6 +105,7 @@ require_once('./assets/php/function.php');
 
         <?php
         if (isset($_POST["totalPinjaman"]) && isset($_POST["uangMuka"]) && isset($_POST["tenor"]) && isset($_POST["bunga"])) {
+
             $totalPinjaman = $_POST["totalPinjaman"];
             $uangMuka = $_POST["uangMuka"];
             $tenor = $_POST["tenor"];
@@ -233,10 +234,10 @@ require_once('./assets/php/function.php');
                                 ?>
                                     <tr>
                                         <td><?= $angsuran[$i]["bulan"] ?></td>
-                                        <td><?= number_format($angsuran[$i]["bunga"], 2, ',', '.') ?></td>
-                                        <td><?= number_format($angsuran[$i]["pokok"], 2, ',', '.') ?></td>
-                                        <td><?= number_format($angsuran[$i]["total"], 2, ',', '.') ?></td>
-                                        <td><?= number_format($angsuran[$i]["sisa"], 2, ',', '.') ?></td>
+                                        <td><?= number_format($angsuran[$i]["bunga"], 2,) ?></td>
+                                        <td><?= number_format($angsuran[$i]["pokok"], 2) ?></td>
+                                        <td><?= number_format($angsuran[$i]["total"], 2) ?></td>
+                                        <td><?= number_format($angsuran[$i]["sisa"], 2) ?></td>
                                     </tr>
                                 <?php
                                 }
@@ -247,13 +248,13 @@ require_once('./assets/php/function.php');
                                         Total
                                     </th>
                                     <th>
-                                        <?= number_format($angsuran[count($angsuran) - 1]["bunga"], 2, ',', '.') ?>
+                                        <?= number_format($angsuran[count($angsuran) - 1]["bunga"], 2) ?>
                                     </th>
                                     <th>
-                                        <?= number_format($angsuran[count($angsuran) - 1]["pokok"], 2, ',', '.') ?>
+                                        <?= number_format($angsuran[count($angsuran) - 1]["pokok"], 2) ?>
                                     </th>
                                     <th colspan="2">
-                                        <?= number_format($angsuran[count($angsuran) - 1]["total"], 2, ',', '.') ?>
+                                        <?= number_format($angsuran[count($angsuran) - 1]["total"], 2) ?>
                                     </th>
                                 </tr>
                             </tbody>
