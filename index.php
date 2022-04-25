@@ -5,7 +5,7 @@
  * On 23/04/2022
  */
 
-require_once('./assets/php/function.php');
+require_once('./function.php');
 ?>
 
 <!DOCTYPE html>
@@ -178,7 +178,6 @@ require_once('./assets/php/function.php');
                                 <td>:</td>
                                 <td><?= $data->jangkaWaktu . " bulan" ?></td>
                             </tr>
-
 
                             <tr>
                                 <td>Bunga</td>

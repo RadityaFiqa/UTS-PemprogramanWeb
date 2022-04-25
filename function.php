@@ -5,7 +5,6 @@
  * On 23/04/2022
  */
 
-
 class AngsuranFlat
 {
     public $totalPinjaman;
