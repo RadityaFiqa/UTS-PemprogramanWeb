@@ -25,7 +25,7 @@ class AngsuranFlat
     public function angsuranPerbulan()
     {
         $angsuranPokok = $this->totalPinjaman / $this->jangkaWaktu;
-        $angsuranBunga = $this->totalPinjaman * $this->bunga / $this->jangkaWaktu;
+        $angsuranBunga = $this->totalPinjaman * ($this->bunga * $this->jangkaWaktu / 12) / $this->jangkaWaktu;
         $angsuranTotal = $angsuranPokok + $angsuranBunga;
 
         return [
