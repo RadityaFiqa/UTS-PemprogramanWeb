@@ -2,8 +2,10 @@
 
 /**
  * Created By Raditya Firman Syaputra
+ * https://github.com/RadityaFiqa/UTS-PemprogramanWeb
  * On 23/04/2022
  */
+
 
 class AngsuranFlat
 {

@@ -2,6 +2,7 @@
 
 /**
  * Created By Raditya Firman Syaputra
+ * https://github.com/RadityaFiqa/UTS-PemprogramanWeb
  * On 23/04/2022
  */
 
@@ -30,7 +31,7 @@ require_once('./function.php');
                         <img src="./assets/img/animation.svg" alt="" />
                     </div>
                     <div class="right">
-                        <h4>Kalkulator Simulasi Pengajuan Kredit</h4>
+                        <h4>Kalkulator Simulasi Pengajuan Kredit KPR</h4>
                         <p>
                             Silahkan masukkan data-data berikut untuk memulai simulasi
                             pengajuan kredit
@@ -43,7 +44,7 @@ require_once('./function.php');
                         <div class="row">
                             <div class="col-lg-6">
                                 <div class="form-group">
-                                    <label for="">Jumlah Pinjaman</label>
+                                    <label for="">Harga Rumah</label>
                                     <input type="number" name="totalPinjaman" value="<?= (isset($_POST["totalPinjaman"])) ? $_POST["totalPinjaman"] : "" ?>" min="100000000" placeholder="Min 100,000,000" required class="form-control" />
                                 </div>
                             </div>
