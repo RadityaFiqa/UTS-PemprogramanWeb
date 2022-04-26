@@ -234,7 +234,7 @@ require_once('./function.php');
                                 ?>
                                     <tr>
                                         <td><?= $angsuran[$i]["bulan"] ?></td>
-                                        <td><?= number_format($angsuran[$i]["bunga"], 2,) ?></td>
+                                        <td><?= number_format($angsuran[$i]["bunga"], 2) ?></td>
                                         <td><?= number_format($angsuran[$i]["pokok"], 2) ?></td>
                                         <td><?= number_format($angsuran[$i]["total"], 2) ?></td>
                                         <td><?= number_format($angsuran[$i]["sisa"], 2) ?></td>
